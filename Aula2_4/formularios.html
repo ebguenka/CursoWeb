@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Formulários</title>
+</head>
+
+<body>
+
+    <!-- Utilizar os valores "get" e "?"" para exibir os dados na barra de endereço do navegador-->
+    <form method="get" action="?">
+        <label>Nome: </label>
+        <input type="text" name="campoNome" placeholder="Insira aqui o seu nome">
+        <br>
+        <label>Idade: </label>
+        <input type="number" name="campoIdade" min="0" max="115">
+        <br>
+
+        <!--Campo name colocar o mesmo nome, colocar value para o servidor identificar masculino e feminino-->
+        <label>Sexo</label>
+        <input type="radio" name="campoSexo" value="M"> Masculino
+        <input type="radio" name="campoSexo" value="F"> Feminino
+        <br>
+
+        <label>intereses: </label>
+        <br>
+        <input type="checkbox" name="campoAutomovel"> Automóveis
+        <br>
+        <input type="checkbox" name="campoBarco"> Barcos
+        <br>
+        <input type="checkbox" name="campoAviao"> Aviões
+        <br>
+
+        <label>Estado civil: </label>
+        <select name="campoEstadoCivil">
+            <option value="S">Solteiro(a)</option>
+            <option value="C">Casado(a)</option>
+            <option value="D">Divorciado(a)</option>
+            <option value="V">Viúvo(a)</option>
+        </select>
+        <br>
+        <br>
+        <input type="reset" value="Limpar os dados">
+        <input type="submit" value="Enviar os dados">
+</body>
+
+</html>
